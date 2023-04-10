@@ -1,11 +1,12 @@
 
 import React from 'react';
+import Header from './component/Header';
 
 const App = () => {
   return (
-    <div>
-      Hello THis is Assingment 9
-    </div>
+    <>
+      <Header></Header>
+    </>
   );
 };
 
