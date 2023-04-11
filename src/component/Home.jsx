@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Category from './Category';
+import { useLoaderData } from 'react-router-dom';
+import FeatureJobs from './FeatureJobs';
 
 const Home = () => {
+
+    const {jobs} = useLoaderData()
 
     const [categories, setCategories] = useState([])
     useEffect(() => {
@@ -35,6 +39,19 @@ const Home = () => {
                          ></Category>)
                 }
             </div>
+        </section>
+
+        <section className='my-24  container mx-auto '>
+            <div className='text-center pb-7'>
+            <h1 className='text-4xl font-semibold  '>Featured Jobs</h1>
+            <p className='text-sm text-slate-500 mt-3 '>Explore thousands of job opportunities with all the information you need. Its your future</p>
+            </div>
+            <div className='grid grid-cols-2 px-20 gap-3'>
+                {
+                    jobs?.slice(0, 4).map(job => <FeatureJobs job={job} key={job.id}></FeatureJobs>)
+                }
+            </div>
+            <button>See All Jobs</button>
         </section>
     </section>
 
