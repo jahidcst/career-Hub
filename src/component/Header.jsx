@@ -1,13 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
         <nav className='bg-gray-100 '>
             {/* Navbar ---- */}
 
-            <div className='flex justify-evenly justify-center items-center pt-5'>
-                <h2 className='font-semibold text-xl'>Career<span className='text-2xl text-fuchsia-600'>Bazaar</span></h2>
+            <div className='flex justify-evenly justify-center items-center pt-5 pb-5'>
+               <Link to='/'> <h2  className='font-bold text-2xl'>Career<span className='text-3xl text-fuchsia-600'>Bazaar</span></h2></Link>
                 <ul className='flex gap-10'>
                     <li>
                         <NavLink

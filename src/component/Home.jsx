@@ -20,7 +20,7 @@ const Home = () => {
                 <button className='rounded p-2 hover:bg-purple-500 bg-sky-500 text-white'>Get Started</button>
             </div>
             <div>
-                <img  className='h-96 -mt-16' src="/public/hardy.png" alt="" />
+                <img  className='h-96 -mt-16' src="https://i.ibb.co/3vmyDPc/hardy.png" alt="" />
             </div>
         </div>
 
