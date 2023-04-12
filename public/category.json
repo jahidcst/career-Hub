@@ -1,28 +1,29 @@
 {
-  "categories": [
-    {
-      "id": 1,
-      "name": "Accounting and Finance",
-      "logo": "https://i.ibb.co/5T9KfS7/accounts-1.png",
-      "available": "100+ Job Available"
-    },
-    {
-      "id": 2,
-      "name": "Creative Design",
-      "logo": "https://i.ibb.co/6NBffFQ/business-1.png",
-      "available": "100+ Job Available"
-    },
-    {
-      "id": 3,
-      "name": "Marketing & Sales",
-      "logo": "https://i.ibb.co/L93WZws/social-media-1.png",
-      "available": "200+ Job Available"
-    },
-    {
-      "id": 4,
-      "name": "Engineering Job",
-      "logo": "https://i.ibb.co/6Rn3HT6/chip-1.png",
-      "available": "150+ Job Available"
-    }
-  ]
-}
+    "categories": [
+      {
+        "id": 1,
+        "name": "Accounting and Finance",
+        "logo": "https://i.ibb.co/5T9KfS7/accounts-1.png",
+        "available": "100+ Job Available"
+      },
+      {
+        "id": 2,
+        "name": "Creative Design",
+        "logo": "https://i.ibb.co/6NBffFQ/business-1.png",
+        "available": "100+ Job Available"
+      },
+      {
+        "id": 3,
+        "name": "Marketing & Sales",
+        "logo": "https://i.ibb.co/L93WZws/social-media-1.png",
+        "available": "200+ Job Available"
+      },
+      {
+        "id": 4,
+        "name": "Engineering Job",
+        "logo": "https://i.ibb.co/6Rn3HT6/chip-1.png",
+        "available": "150+ Job Available"
+      }
+    ]
+  }
+  
