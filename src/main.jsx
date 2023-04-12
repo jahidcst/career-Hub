@@ -4,10 +4,10 @@ import App from './App'
 import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Home from './component/Home'
-import Statistics from './component/Statistics'
-import AppliedJobs from './component/AppliedJobs'
-import Blogs from './component/Blogs'
+import Blogs from './component/Blog/Blog'
 import ErrorPage from './component/ErrorPage'
+import Statistics from './component/Statistics/Statistics'
+import AppliedJob from './component/AppliedJobs/AppliedJob'
 
 const router = createBrowserRouter([
   {
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/applied jobs',
-        element: <AppliedJobs></AppliedJobs>
+        element: <AppliedJob></AppliedJob>
       },
       {
         path: '/blogs',
