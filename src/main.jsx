@@ -1,43 +1,56 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
-import {createBrowserRouter, RouterProvider} from "react-router-dom"
-import Home from './component/Home'
-import Blogs from './component/Blog/Blog'
-import ErrorPage from './component/ErrorPage'
-import Statistics from './component/Statistics/Statistics'
-import AppliedJob from './component/AppliedJobs/AppliedJob'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./components/Home/Home";
+import Statistics from "./components/Statistics/Statistics";
+import Blog from "./components/Blog/Blog";
+
+import AppliedJob from "./components/AppliedJobs/AppliedJob";
+import SingleDetails from "./components/Home/FeaturedJobs/DetailsJob/SingleDetails";
+import Loading from "./components/Loading/Loading";
+import NoData from "./components/Error/NoData";
+import ErrorPage from "./components/Error/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App></App>,
+    element: <App />,
     errorElement: <ErrorPage></ErrorPage>,
+    loader: () => fetch("/data.json"),
     children: [
       {
-        path: '/',
-        element: <Home></Home>,
-        loader: ()=> fetch('/public/data.json')
+        path: "/",
+        element: <Home />,
+        loader: () => fetch("/category.json"),
       },
       {
-        path: '/statistics',
-        element: <Statistics></Statistics>
+        path: "statistics",
+        element: <Statistics />,
       },
       {
-        path: '/applied jobs',
-        element: <AppliedJob></AppliedJob>
+        path: "blog",
+        element: <Blog />,
       },
-      {
-        path: '/blogs',
-        element: <Blogs></Blogs>
-      }
-    ]
-  }
-])
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router}/>
-  </React.StrictMode>,
-)
+      {
+        path: "applies",
+        element: <AppliedJob />,
+      },
+      {
+        path: "notdata",
+        element: <NoData />,
+      },
+      {
+        path: "/details/:jobId",
+        element: <SingleDetails />,
+        loader: ({ params }) => params,
+      },
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
+);
