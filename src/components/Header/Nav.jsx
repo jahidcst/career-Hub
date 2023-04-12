@@ -19,7 +19,7 @@ const Nav = () => {
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}
             to={"applies"}>
-            Job Applies
+            Applied Jobs
           </NavLink>
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}

@@ -11,13 +11,13 @@ import {
 
 const Statistics = () => {
   const data = [
-    { name: "A1", value: 60 },
+    { name: "A1", value: 55 },
     { name: "A2", value: 60 },
     { name: "A3", value: 60 },
-    { name: "A4", value: 50 },
+    { name: "A4", value: 58 },
     { name: "A5", value: 60 },
     { name: "A6", value: 54 },
-    { name: "A7", value: 60 },
+    { name: "A7", value: 52 },
     { name: "A8", value: 60 },
   ];
 

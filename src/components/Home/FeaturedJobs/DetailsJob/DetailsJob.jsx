@@ -9,8 +9,8 @@ const DetailsJob = ({ job }) => {
     job;
   const navigate = useNavigate();
   return (
-    <div className="border p-5 space-y-2 relative rounded-md ">
-      <div className="w-28 h-24 flex items-center justify-center">
+    <div className="border p-5 space-y-2 relative rounded-md mt-7 ">
+      <div className="w-28 h-24 flex items-center justify-cente">
         <img
           className="w-full
       "
@@ -20,10 +20,9 @@ const DetailsJob = ({ job }) => {
       </div>
       <h1 className="text-xl font-semibold">{position}</h1>
       <p className="text-base text-gray-700 pb-2">{company}</p>
-      <span className="btn-outline">{work_type}</span>{" "}
       <span className="btn-outline">{worktime}</span>
       <div className="flex gap-4">
-      <p className="text-gray-700 py-2 text-md flex items-center">
+      <p className="text-gray-700 text-md flex items-center">
         {" "}
         <svg
           xmlns="http://www.w3.org/2000/svg"
